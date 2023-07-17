@@ -29,18 +29,18 @@
 
     
     
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
       
     
     
-    <meta property="og:title" content="My New Hugo Site" />
+    <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/" />
-<meta itemprop="name" content="My New Hugo Site">
+<meta property="og:url" content="http://example.org/posts/" />
+<meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My New Hugo Site"/>
+<meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
 
 	
@@ -74,7 +74,7 @@
 
       <div class="tc-l pv3 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          My New Hugo Site
+          Posts
         </h1>
         
       </div>
@@ -84,46 +84,21 @@
 
     <main class="pb7" role="main">
       
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
-  </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-       
-          <h1 class="flex-none">
-            Recent Posts
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/go-etl/" class="color-inherit dim link">
-            Go Etl
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          go-etl数据同步项目 go-etl目前是由我主导开发的一个开源项目，是一个集数据源抽取，转化，加载的工具集。它目前主要是由go语言开发的，基于go语言的跨平台的，目前它已经能稳定在windows和Linux下对主流数据库和无结构流文件进行数据同步。
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/go-etl/" class="link black dim">
+        Go Etl
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      go-etl数据同步项目 go-etl目前是由我主导开发的一个开源项目，是一个集数据源抽取，转化，加载的工具集。它目前主要是由go语言开发的，基于go语言的跨平台的，目前它已经能稳定在windows和Linux下对主流数据库和无结构流文件进行数据同步。
 由于go-etl是我从零开始搭建的项目，为此在本项目中使用了大量的go语言相关的特性以及构建特性。在本项目中你不仅可以使用go-etl的数据同步特性，还可以从零开始学习如何使用go语言去搭建一个开源项目。欢迎加QQ群185188648来讨论go-etl，让我们一起进步!
 数据源支持列表 目前它支持的数据源如下表所示，可以看到目前go-etl数据同步工具已经支持了主流的关系型数据库和主流的文件类型。
 类型 数据源 Reader（读） Writer(写) 关系型数据库 MySQL/Mariadb/Tidb √ √ Postgres/Greenplum √ √ DB2 LUW √ √ SQL Server √ √ Oracle √ √ 无结构流 CSV √ √ XLSX（excel） √ √ 数据同步用户手册 使用go-etl数据同步用户手册开始数据同步，另外需要下载[go-etl数据同步工具datax的v0.1.4版本](Release v0.1.4: 新增querySQL特性和调试监控端口 · Breeze0806/go-etl · GitHub)
@@ -137,22 +112,13 @@ stream 主要用于字节流的解析，如文件，消息队列，elasticsearch
 file 主要用于文件的解析，如cvs，excel等，抽象出了输入文件流（InStream）和输出文件流（OutStream）等关键接口，采用文件io.Reader和io.Writer等具有go语言特点的接口去实现的库。
 tools 工具集用于编译，新增许可证等
 datax build go generate .
-        </div>
-          <a href="/posts/go-etl/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-      </section>
-
+        </div>
       
-
-      </div>
-  
+    </section></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
