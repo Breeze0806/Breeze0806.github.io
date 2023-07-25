@@ -119,28 +119,27 @@
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/golang/go%E8%AF%AD%E8%A8%80%E5%85%A8%E6%99%AF%E7%AE%80%E4%BB%8B/" class="color-inherit dim link">
-            go语言全景简介
+            golang全景简介
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          全景简介 go语言由google公司开源的用于提高程序员编程效率的编程语言。它是一门简单易学、静态编译、原生并发以及向后兼容性的高效快捷的轻量级语言。
-发展历程 目前go语言每半年会迭代一个新版本，从2012年的go1.0开始，已经历经20个版本，目前已经到了go1.20，go语言开始使用c语言去构建的，从2015年开始进入快速发展期，以用于大型项目的工程语言进入人们的视野。
-go语言在go1.1-g1.4时还不具备工程化的条件，但在go1.5时开始具备工程化的条件，这是因为(1)在go1.5之前的版本go语言采用的是c语言编译器，(2)gc的STW时间会很长，(3)第三方包没有合理的存放位置。
-而在go1.5版本开始实现go语言自举，在这个版本里开始采用三色标记法，这使得go语言的gc时间大幅下降，经过go1.6-go1.7的改进，使得go语言的STW时间大幅缩短，另外在这个版本开始实验vender机制。
-这三个特性的加入使得go语言在2015年之后开始火爆的原因，在go1.7正式使用vender机制，在go1.9版本STW时间缩短至100us以内，为此go语言在go1.9版本已经完全具备工程化的条件。
-之后go语言在go1.11版本开始实验go mod机制以替换vender机制，在go1.13正式引入go mod机制，彻底解决了第三方库的版本问题，在go1.18版本中实验golang的泛型特性，而在go1.20版本中正式引入golang的泛型特性。
+          全景简介 ***go语言由google公司开源的用于提高程序员编程效率的编程语言。***它是一门简单易学、静态编译、原生并发以及向后兼容性的高效快捷的轻量级语言。
+发展历程 目前go语言每半年会迭代一个新版本，从2012年的go1.0开始，已经历经21个版本，目前已经到了go1.20，从2015年开始进入快速发展期，以用于大型项目的工程语言进入人们的视野。
+golang在go1.1-g1.4时还不具备工程化的条件，但在go1.5时开始具备工程化的条件，这是因为(1)在go1.5之前的版本golang采用的是c语言编译器，(2)gc的STW时间会很长，(3)第三方包没有合理的存放位置。
+而在go1.5版本开始实现go语言自举，在这个版本里开始采用三色标记法，这使得golang的gc时间大幅下降，经过go1.6-go1.7的改进，使得golang的STW时间大幅缩短，另外在这个版本开始实验vender机制。
+这三个特性的加入使得golang在2015年之后开始火爆的原因，在go1.7正式使用vender机制，在go1.9版本STW时间缩短至100us以内，为此golang在go1.9版本已经完全具备工程化的条件。
+之后golang在go1.11版本开始实验go mod机制以替换vender机制，在go1.13正式引入go mod机制，彻底解决了第三方库的版本问题，在go1.18版本中实验golang的泛型特性，而在go1.20版本中正式引入golang的泛型特性。
 应用场景 go语言用于云原生开发，命令行接口，网站开发，运维开发领域以及存储开发。
-云和网络服务 随着docker和kubernetes等杀手级应用的出现和发展，go语言逐渐成为云和网络服务领域中举足轻重的语言，目前由超过75%的云原生计算基金项目都是使用golang开发的。
+云和网络服务 随着docker和kubernetes等杀手级应用的出现和发展，golang逐渐成为云和网络服务领域中举足轻重的语言，目前由超过75%的云原生计算基金项目都是使用go语言开发的。
 命令行接口 对于命令行接口应用，go语言能够将其快速地构建成二进制程序，提供跨平台工作的开发方式以及强大的社区支持。我们可以在windows或者mac上开发或者调试，在Linux上编译部署。它通过静态编译构建的二进制程序即插即用，几乎不需要任何其他依赖。
 go语言不仅有着c/c++，java等传统编译语言无法企及的编译速度，又有类似于c/c++的运行速度，这些让程序员有更好的编程体验。
-例如，hub是github推出的用于辅助git的命令行工具，它是用go语言编写的。另外如greenplum的gpbackup和gprestore也是用golang编写的。
+例如，hub是github推出的用于辅助git的命令行工具，它是用go语言编写的。另外如greenplum的gpbackup和gprestore也是用go语言编写的。
 网站 go语言不仅天生支持高并发，能以极小的开销约4K的内存启动一个携程goroutine，而且go语言的标准库对于web开发的强大支持，能让业务人员专注于业务开发，这些使得go语言在网站开发方面占有一席之地。
-当然在web框架方面，目前主要有gin和beego。特别是gin已经相当成熟。
 运维 go语言在运维开发编写脚本时拥有大量优秀的标准库支持。另外，go语言还提供了丰富的工具链帮助用于编写高效、健壮以及可维护性强的程序。
-目前在运维开发领域，使用golang开发优秀的项目有类似于zabbix的Prometheus，将运维数据可视化的grafana，用于容器CI/CD的Docker CI/CD等等
-存储 golang是带有gc，高性能并且高并发的特点，为此在存储领域也有比较好的发展。例如分布式数据库tidb（sql层使用golang开发）、时序性数据库influxdb、分布式kv存储etcd以及分布式消息队列nsq都是其中的佼佼者。
-优点 简单易学 sum := 0 for i := 0; i &lt; 30; i ++ { if i % 2 == 0 { sum += i } } fmt.Println(sum) golang大多数语法继承自C语言，学习难度和python类似，学习成本较低，大约1-2周初学者就能开发一些实用的小程序。
-即插即用 golang采用静态编译的方式，产生出的二进制程序即插即用，几乎无需其他依赖。
+目前在运维开发领域，使用go语言开发优秀的项目有类似于zabbix的Prometheus，将运维数据可视化的grafana，用于容器CI/CD的Docker CI/CD等等
+存储 go语言是带有gc，高性能并且高并发的特点，为此在存储领域也有比较好的发展。例如分布式数据库tidb（sql层使用go语言开发）、时序性数据库influxdb、分布式kv存储etcd以及分布式消息队列nsq都是其中的佼佼者。
+优点 简单易学 sum := 0 for i := 0; i &lt; 30; i ++ { if i % 2 == 0 { sum += i } } fmt.Println(sum) go语言许多语法和C语言很相似，学习难度和python类似，学习成本较低，大约1-2周初学者就能开发一些实用的小程序。当然如果你学过C语言，你将更快入门go语言
+即插即用 go语言采用静态编译的方式，产生出的二进制程序即插即用，几乎无需其他依赖。
 原生并发 c := make(chan int) go func() { for { select { case e, ok := &lt;-c: if !
         </div>
           <a href="/golang/go%E8%AF%AD%E8%A8%80%E5%85%A8%E6%99%AF%E7%AE%80%E4%BB%8B/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
